@@ -1,0 +1,100 @@
+/* ====== Auth Container ====== */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  min-width: 160dvh;
+  background: linear-gradient(135deg, #a8dadc 0%, #457b9d 100%);
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* ====== Auth Card ====== */
+.auth-card {
+  background: #ffffff;
+  padding: 50px 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.auth-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* ====== Form Group ====== */
+.form-group {
+  text-align: left;
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #1d3557; /* deep navy for focus readability */
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #457b9d;
+  box-shadow: 0 0 0 3px rgba(69, 123, 157, 0.2); /* gentle blue glow */
+}
+
+/* ====== Button ====== */
+.btn-primary {
+  width: 100%;
+  padding: 12px;
+  margin-top: 14px;
+  background: #1d3557;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+  background: #457b9d;
+  transform: translateY(-2px);
+}
+
+/* ====== Error Message ====== */
+.error {
+  color: #e63946; /* softer red, easier on eyes */
+  font-size: 13px;
+  margin-top: 6px;
+  letter-spacing: 0.3px;
+}
+
+/* ====== Responsive Adjustments ====== */
+@media (max-width: 500px) {
+  .auth-card {
+    padding: 40px 25px;
+    border-radius: 12px;
+  }
+
+  .btn-primary {
+    font-size: 16px;
+  }
+}
