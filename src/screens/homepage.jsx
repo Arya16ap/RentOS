@@ -40,6 +40,7 @@ function Homepage() {
 
   return (
     <div className="homepage-container">
+      <title>RentOS</title>
       <Sidebar />
       <div className='home-button'>
         <button onClick={() => navigate('/progress')}>← User Dashboard</button>
